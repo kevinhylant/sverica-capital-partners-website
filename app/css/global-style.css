@@ -161,15 +161,6 @@ html {
     -webkit-font-smoothing: subpixel-antialiased
 }
 
-/*COLOR SCHEME*/
-/*Dark Grey Color:
-    #232323
- Light Grey Color
-    #6d7378;
-Blue Color: 
-    #284f86
-*/
-
 body {
     overflow-x: hidden;
     position: relative;
@@ -239,11 +230,11 @@ p {
     font-size: 15px;
 }
 a {
-    color: #232323;
+    color: #61b1d8;
     cursor: pointer
 }
 a:hover {
-    color: #284f86;
+    color: #232323;
     text-decoration: none;
     -o-transition: .3s;
     -ms-transition: .3s;
@@ -547,7 +538,7 @@ label {
     border-right: 1px solid #e0eded
 }
 .bb {
-    /*border-bottom: 1px solid #e0eded*/
+    border-bottom: 2px solid #474748
 }
 .bl {
     border-left: 1px solid #e0eded
@@ -3576,7 +3567,7 @@ section.slice-over-elements {
     transition: transform .4s, opacity .1s .3s
 }
 .animate-hover-slide .figure:hover .figcaption {
-    opacity: .8;
+    opacity: 1;
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -3739,12 +3730,12 @@ section.slice-over-elements {
     transition: transform .4s, opacity .1s .3s
 }
 .animate-hover-slide-3 .figure .figcaption {
-    height: 50px;
     background: #e3e3e3;
     color: #474747 !important;
     font-size: 13px !important;
-    padding: 0 10px;
-    width: 100%;
+    padding: 7px 0px 0px 7px;
+    width: 4.73vw;
+    height: 4.73vw;
     position: absolute;
     left: 0;
     top: auto;
@@ -7019,22 +7010,24 @@ blockquote footer {
     position: relative
 }
 .carousel-3 .carousel-nav a {
-    width: 30px;
-    /*height: 30px;*/
-    /*line-height: 30px;*/
-    position: absolute;
-    top: -40px;
     right: 0;
     margin-top: 0;
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
     border: 1px solid transparent;
     background: #f5f5f5;
-    color: #284f86;
-    opacity: 1
+    color: #474747;
+    opacity: 1;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #474748;
+    padding-top: 1px;
+    width: 35px;
+    height: 35px;
 }
 .carousel-3 .carousel-nav a:hover {
-    background: #284f86 !important;
+    background: #474748 !important;
+    border-color: #fff;
     color: #fff
 }
 .carousel-3 .carousel-nav a.left {
@@ -8261,10 +8254,10 @@ div.tabbable.wp-tabs-right ul.nav-tabs li.active a {
     margin-right: 4px
 }
 .btn-lg {
-    font-size: 20px;
-    font: 20px/1.5em 'Roboto Light', Helvetica, sans-serif !important;
+    font-size: 15px;
+    font-family: 'Roboto Light', "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif !important;
+    -webkit-font-smoothing:antialiased;
     font-weight: 100;
-    /*line-height: 1.33;*/
     border-radius: 2px
 }
 .btn-lg i {
@@ -8322,6 +8315,17 @@ div.tabbable.wp-tabs-right ul.nav-tabs li.active a {
     border-right: 0;
     border-left: 2px solid #fff
 }
+.btn-b-charcoal {
+    background-color: transparent;
+    border: 2px solid #474747;
+    color: #474747
+}
+.btn-b-charcoal:hover, .btn-b-base:focus, .btn-b-base:active {
+    color: #fff;
+    background-color: #474747;
+    border-color: #fff;
+}
+
 .btn-b-base {
     background-color: transparent;
     border: 2px solid #284f86;
