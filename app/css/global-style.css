@@ -160,13 +160,24 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-font-smoothing: subpixel-antialiased
 }
+
+/*COLOR SCHEME*/
+/*Dark Grey Color:
+    #232323
+ Light Grey Color
+    #6d7378;
+Blue Color: 
+    #284f86
+*/
+
 body {
     overflow-x: hidden;
     position: relative;
-    font-family: "ProximaNova-Regular","lato",sans-serif !important;
+    font: 20px/1.5em 'Roboto Light', Helvetica, sans-serif !important;
+    -webkit-font-smoothing:antialiased;
     font-size: 13px;
     line-height: 22px;
-    font-weight: 300;
+    font-weight: 100;
     background-color: #fff;
     color: #616161
 }
@@ -187,61 +198,31 @@ button, input, select, textarea {
     vertical-align: top;
     margin: 0
 }
-.list-group-item {
-    background: transparent
-}
-.body-bg-1 {
-    background: #f1f1f1
-}
-.body-bg-2 {
-    background: url("/app/assets/images/patterns/binding-dark.png") repeat
-}
-.body-bg-3 {
-    background: url("/app/assets/images/patterns/squairy-light.png") repeat
-}
-.body-bg-4 {
-    background: url("/app/assets/images/patterns/dark-dotted.png") repeat
-}
-.body-bg-5 {
-    background: url("/app/assets/images/patterns/skulls.png") repeat
-}
-.body-bg-6 {
-    background: url("/app/assets/images/backgrounds/full-bg-10.jpg") no-repeat fixed
-}
-.body-bg-7 {
-    background: url("/app/assets/images/backgrounds/full-bg-3.jpg") no-repeat fixed
-}
-iframe {
-    border: 0;
-    margin-top: 0 !important
-}
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Quattrocento';
+
 }
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
     line-height: 1.2em;
     margin-bottom: .7em;
-    text-transform: capitalize
+    text-transform: capitalize;
+    font-weight: 100;
 }
 h1 {
-    font-size: 29px
+    font-size: 36px
 }
 h2 {
-    font-size: 25px
+    font-size: 30px;
+    font-weight: 300;
 }
 h3 {
-    font-size: 23px
+    font-size: 25px
 }
 h4 {
-    font-size: 19px
+    font-size: 22px
 }
 h5 {
     font-size: 17px
-}
-h6 {
-    font-size: 14px
 }
 em {
     font-style: italic
@@ -254,10 +235,11 @@ small {
 }
 p {
     line-height: 22px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    font-size: 15px;
 }
 a {
-    color: #333;
+    color: #232323;
     cursor: pointer
 }
 a:hover {
@@ -331,7 +313,7 @@ label {
     color: #000
 }
 .base h1, .base>h2, .base h3, .base h4, .base h5, .base h6 {
-    color: #fff
+    color: #232323
 }
 .base-alt h1, .base-alt h2, .base-alt h3, .base-alt h4, .base-alt h5, .base-alt h6 {
     color: #fff !important
@@ -396,101 +378,29 @@ label {
     color: #fff
 }
 .base-alt {
-    background: #9cd70e;
+    background: #284f86;
     color: #fff
 }
 .base-alt a, .base-alt i {
     color: #fff
 }
-.alpha {
-    background: rgba(255, 255, 255, 0.5)
-}
-.red {
-    background: #e91b23;
-    color: #fff
-}
-.red a, .red i {
-    color: #fff
-}
-.yellow {
-    background: #ffd800;
-    color: #fff
-}
-.yellow a, .yellow i {
-    color: #fff
-}
-.orange {
-    background: #ff8a3c;
-    color: #fff
-}
-.orange a, .orange i {
-    color: #fff
-}
-.green {
-    background: #2ecc71;
-    color: #fff
-}
-.blue {
-    background: #2980b9;
-    color: #fff
-}
-.purple {
-    background: #8e44ad;
-    color: #fff
-}
-.black {
-    background: #000;
-    color: #fff
-}
-.gray {
-    background: #ecf0f1;
-    color: #eee
-}
-.dark-cyan {
-    background: #42bdc2;
-    color: #fff
-}
-.forest-green {
-    background: #7fc242;
-    color: #fff
-}
-.bg-header {
-    background: #fff
-}
+
+/* BACKGROUND SOLID COLORS */
 .bg-white {
-    background: #fff !important
+    background: #fff !important;
+    color: #232323;
 }
 .bg-base {
     background: #284f86;
-    color: #fff
+    color: #fff;
 }
-.bg-base {
-    background: #284f86;
-    color: #fff
+.bg-light-blue {
+    background: #8aa7b7;
+    color: #fff;
 }
-.bg-base-alt {
-    background: #9cd70e;
-    color: #616161
-}
-.bg-white {
-    background: #fff;
-    color: #666
-}
-.bg-white-alt {
-    background: #ecf0f1;
-    color: #666
-}
-.bg-dark {
-    background: #131313;
-    color: #284f86
-}
-.bg-dark-alt {
-    background: #1a4d68;
-    color: #284f86
-}
-.bg-gray-alt {
-    background: #dee0e1;
-    color: #eee
+.bg-grey {
+    background: #E5E5E5;
+    color: #232323;
 }
 .no-padding {
     padding: 0 !important
@@ -637,7 +547,7 @@ label {
     border-right: 1px solid #e0eded
 }
 .bb {
-    border-bottom: 1px solid #e0eded
+    /*border-bottom: 1px solid #e0eded*/
 }
 .bl {
     border-left: 1px solid #e0eded
@@ -727,23 +637,7 @@ label {
     font-size: 20px;
     font-weight: 500
 }
-.full-size-link {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0
-}
-.bg-banner-1 {
-    padding: 54px 0 !important;
-    background: url(../assets/images/prv/banner-img-4.jpg) fixed no-repeat !important;
-    color: #fff
-}
-.bg-banner-2 {
-    padding: 54px 0 !important;
-    background: url(../assets/images/prv/banner-img-1.jpg) no-repeat fixed !important;
-    color: #fff
-}
+
 .prlx-bg {
     background-attachment: fixed;
     background-position: 50% 0;
@@ -842,7 +736,7 @@ header .top-navbar-header .navbar-brand {
     padding: 20px 0
 }
 header .navbar-wp .navbar-brand img {
-    height: 46px
+    height: 80%;
 }
 header .navbar-wp.affix .navbar-brand {
     margin-top: 4px
@@ -1008,7 +902,7 @@ header .navbar-fixed .navbar {
     margin-right: 0;
     font-size: 14px;
     font-weight: 500;
-    font-family: "ProximaNova-Regular","lato",sans-serif;
+    font-family: 'Roboto Light', Helvetica, sans-serif;
     color: #333;
     text-transform: uppercase;
     -webkit-transition: all .25s ease-out;
@@ -1048,7 +942,7 @@ header .navbar-fixed .navbar {
     margin-right: 0;
     font-size: 14px;
     font-weight: 500;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto Light', Helvetica, sans-serif;
     color: #fff;
     text-transform: uppercase;
     -webkit-transition: all .25s ease-out;
@@ -1071,7 +965,7 @@ header .navbar-fixed .navbar {
     padding: 14px 16px;
     margin-right: 0;
     font-size: 14px;
-    font-family: "ProximaNova-Regular","lato",sans-serif;
+    font-family: 'Roboto Light', Helvetica, sans-serif;
     color: #333;
     text-transform: uppercase;
     font-weight: 500;
@@ -1282,7 +1176,7 @@ header .navbar-fixed .navbar {
 }
 .navbar-wp .dropdown-menu .mega-nav-section-title {
     font-size: 14px;
-    font-family: "ProximaNova-Regular","lato",sans-serif;
+    font-family: 'Roboto Light', Helvetica, sans-serif;
     margin: 0 0 10px 0;
     text-transform: capitalize;
     color: #333;
@@ -1314,7 +1208,7 @@ header .navbar-fixed .navbar {
 }
 .navbar-wp .dropdown-menu ul.mega-nav-ul.arrow-li li a:before {
     content: "\f105";
-    font-family: FontAwesome;
+    font-family: 'Roboto Light', Helvetica, sans-serif;
     position: absolute;
     left: 0;
     color: #333
@@ -1342,7 +1236,7 @@ header .navbar-fixed .navbar {
     margin-right: 0;
     font-size: 14px;
     font-weight: 500;
-    font-family: "ProximaNova-Regular","lato",sans-serif;
+    font-family: 'Roboto Light', Helvetica, sans-serif;
     text-transform: uppercase
 }
 .navbar-wp .navbar-nav>li>a.dropdown-form-toggle {
@@ -2438,7 +2332,7 @@ header .navbar-fixed .navbar {
 }
 .wp-block.article .video-hover-play a:before {
     content: "\f144";
-    font-family: FontAwesome;
+    font-family: 'Roboto Light', Helvetica, sans-serif;
     font-size: 30px;
     color: #fff;
     position: absolute;
@@ -2817,7 +2711,7 @@ header .navbar-fixed .navbar {
 }
 .milestone-counter .milestone-count {
     font-size: 72px;
-    font-family: "ProximaNova-Regular","lato",sans-serif;
+    font-family: 'Roboto Light', Helvetica, sans-serif;
     margin-bottom: 20px;
     font-weight: 700;
     text-transform: uppercase;
@@ -3378,7 +3272,7 @@ a.open-panel:hover {
     font-weight: 400
 }
 section.slice {
-    padding: 30px 0
+    padding: 40px 0
 }
 section.slice.arrow-bottom {
     position: relative
@@ -3845,10 +3739,11 @@ section.slice-over-elements {
     transition: transform .4s, opacity .1s .3s
 }
 .animate-hover-slide-3 .figure .figcaption {
-    height: 32px;
+    height: 50px;
     background: #e3e3e3;
-    color: #000 !important;
-    padding: 0 15px;
+    color: #474747 !important;
+    font-size: 13px !important;
+    padding: 0 10px;
     width: 100%;
     position: absolute;
     left: 0;
@@ -3868,7 +3763,7 @@ section.slice-over-elements {
     color: #000 !important
 }
 .animate-hover-slide-3 .figure:hover .figcaption {
-    opacity: 1;
+    opacity: .90;
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -4334,7 +4229,7 @@ section.slice-over-elements {
     background: #fcfcfc;
     font-size: 34px;
     font-weight: 700;
-    font-family: "ProximaNova-Regular","lato",sans-serif;
+    font-family: 'Roboto Light', Helvetica, sans-serif;
     color: #4172a5;
     text-shadow: 2px 2px #fff
 }
@@ -5147,18 +5042,18 @@ ul.social-icons li {
 }
 ul.social-icons li a {
     display: block;
-    height: 32px;
-    width: 32px;
+    height: 25px;
+    width: 25px;
     text-align: center;
-    line-height: 32px
+    line-height: 25px
 }
 ul.social-icons li:hover a {
     color: #fff !important
 }
 ul.social-icons li.text {
-    height: 32px;
+    height: 25px;
     padding-left: 10px;
-    line-height: 32px
+    line-height: 35px
 }
 ul.social-icons li.facebook:hover {
     background: #43609c;
@@ -5497,7 +5392,7 @@ ul.list-listings.blog-list .list-item-info a {
 }
 .post-item.style2 .post-meta .date {
     color: #333;
-    font-family: "ProximaNova-Regular","lato",sans-serif;
+    font-family: 'Roboto Light', Helvetica, sans-serif;
     padding-bottom: 15px;
     margin-bottom: 15px;
     text-align: center;
@@ -6716,15 +6611,11 @@ blockquote footer {
 .section-title {
     margin: 0;
     padding: 0;
-    font-size: 16px;
-    font-weight: 500;
     text-transform: capitalize;
     position: relative
 }
 .section-title.left {
     display: table-cell;
-    color: #333;
-    font-size: 18px
 }
 .section-title.left small {
     display: block;
@@ -6732,14 +6623,13 @@ blockquote footer {
     color: #999
 }
 .section-title-wr .section-title.center {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
+    margin-top: 20px;
     display: block;
     text-align: center;
-    font-size: 26px;
-    color: #333
 }
 .section-title-wr .section-title.center small {
-    display: block;
+    /*display: block;*/
     margin-top: 8px;
     font-size: 13px;
     color: #999
@@ -7130,8 +7020,8 @@ blockquote footer {
 }
 .carousel-3 .carousel-nav a {
     width: 30px;
-    height: 30px;
-    line-height: 30px;
+    /*height: 30px;*/
+    /*line-height: 30px;*/
     position: absolute;
     top: -40px;
     right: 0;
@@ -8371,8 +8261,10 @@ div.tabbable.wp-tabs-right ul.nav-tabs li.active a {
     margin-right: 4px
 }
 .btn-lg {
-    font-size: 18px;
-    line-height: 1.33;
+    font-size: 20px;
+    font: 20px/1.5em 'Roboto Light', Helvetica, sans-serif !important;
+    font-weight: 100;
+    /*line-height: 1.33;*/
     border-radius: 2px
 }
 .btn-lg i {

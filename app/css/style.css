@@ -195,6 +195,8 @@ body {
 
 .white-opaque-text-box {
   position: absolute;
+  color: #474747;  
+  text-align: center;
   top: 0px;
   right: 20%;
   background-color: #FFF;
@@ -203,14 +205,77 @@ body {
   width: 400px;
   z-index: 1;
 }
+.box-content-offset{
+  padding-top: 15%;
+}
 .box-header{
-  
-}
-.box-content{
-  
+  text-transform: uppercase;
 }
 
+.expertise-description {
+  text-align: center;
+}
 
+.ops-expertise-container{
+  height: 35vw;
+  position: relative;
+}
+.sigle-padding{
+  margin-bottom: 20px;
+}
+.double-padding{
+  margin-bottom: 40px;
+}
+.triple-padding{
+  margin-bottom: 60px;
+}
+.double-line-height{
+  line-height: 1.5em;
+}
 
+.ops_exp_box {
+  background: #FFF;
+  border-color: #232323;
+  height: 18vw;
+  width: 23vw;
+  padding: 25px,25px;
+  position: absolute;
+}
+.middle{
+  margin: 0px 15px;
+}
+.middle-left{
+  right: 0px;
+}
+.middle-right{
+  left: 0px;
+}
 
+.news-date{
+  margin-bottom: 15px;
+}
 
+/*.news-link:hover{
+  color: #6d7378 !important;
+  text-decoration: none;
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  -moz-transition: .3s;
+  -webkit-transition: .3s;
+  transition: .35s
+}*/
+
+.employee-name {
+  font-weight: bold;
+}
+.btn:hover {
+  color: black;
+}
+.linkedin {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.profession {
+  margin-bottom: 5px;
+}
